@@ -4,3 +4,5 @@ Esse repositório tem o objetivo de colocar em prática tudo que eu aprendi no c
 
 ### Aula 01 - Strategy
 O objetivo desse padrão de projeto é tratar diferentes estratégias (diferentes códigos) usando do polimorfismo e substituindo a centralização de responsabilidade com vários `ifs` em uma única classe.
+
+[Strategy da Refactoring Guru](https://refactoring.guru/design-patterns/strategy)
