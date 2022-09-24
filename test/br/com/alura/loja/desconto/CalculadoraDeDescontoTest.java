@@ -20,9 +20,14 @@ class CalculadoraDeDescontoTest {
 	}
 	
 	@Test
-	void DeveriaCalcularDezPorcentoDeImpostoEmOrcamentosComMaisDeCincoItens() {
+	void DeveriaCalcularDezPorcentoDeDescontoEmOrcamentoComMaisDeCincoItens() {
 		orcamento = new Orcamento( new BigDecimal("100"), 6);
 		assertEquals(new BigDecimal("10.0"), calculadoraDeDesconto.calcular(orcamento));
 	}
 
+	@Test
+	void DeveriaCalcularDezPorcentoDeDescontoEmOrcamentoComValorMaiorQueQuinhentos() {
+		orcamento = new Orcamento( new BigDecimal("501"), 1);
+		assertEquals(new BigDecimal("50.1"), calculadoraDeDesconto.calcular(orcamento));
+	}
 }
