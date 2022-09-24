@@ -12,18 +12,17 @@ import br.com.alura.loja.orcamento.Orcamento;
 class CalculadoraDeDescontoTest {
 
 	private Orcamento orcamento;
-	private CalculadoraDeDesconto calculadora;
+	private CalculadoraDeDesconto calculadoraDeDesconto;
 	
 	@BeforeEach
 	void beforeEach() {
-		calculadora = new CalculadoraDeDesconto();
+		calculadoraDeDesconto = new CalculadoraDeDesconto();
 	}
 	
 	@Test
 	void DeveriaCalcularDezPorcentoDeImpostoEmOrcamentosComMaisDeCincoItens() {
 		orcamento = new Orcamento( new BigDecimal("100"), 6);
-		calculadora.calcular(orcamento);
-		assertEquals(new BigDecimal("90"), orcamento.getValor());
+		assertEquals(new BigDecimal("10.0"), calculadoraDeDesconto.calcular(orcamento));
 	}
 
 }
