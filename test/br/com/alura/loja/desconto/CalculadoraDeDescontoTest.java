@@ -27,7 +27,7 @@ class CalculadoraDeDescontoTest {
 
 	@Test
 	void DeveriaCalcularDezPorcentoDeDescontoEmOrcamentoComValorMaiorQueQuinhentos() {
-		orcamento = new Orcamento( new BigDecimal("501"), 1);
-		assertEquals(new BigDecimal("50.1"), calculadoraDeDesconto.calcular(orcamento));
+		orcamento = new Orcamento( new BigDecimal("1000"), 1);
+		assertEquals(new BigDecimal("50.00"), calculadoraDeDesconto.calcular(orcamento));
 	}
 }
