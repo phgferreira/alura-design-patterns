@@ -12,5 +12,14 @@ public abstract class Desconto {
 		this.desconto = desconto;
 	}
 	
-	public abstract BigDecimal calcular(Orcamento orcamento);
+	// Esse método abaixo é um template de como os métodos de calculo devem se comportar
+	public BigDecimal calcular(Orcamento orcamento) {
+		if (deveAplicar(orcamento)) {
+			return efetuarCalculo(orcamento);
+		}
+		return desconto.calcular(orcamento);
+	}
+
+	protected abstract BigDecimal efetuarCalculo(Orcamento orcamento);
+	public abstract Boolean deveAplicar(Orcamento orcamento);
 }
