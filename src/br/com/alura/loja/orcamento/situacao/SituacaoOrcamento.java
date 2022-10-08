@@ -15,11 +15,11 @@ public abstract class SituacaoOrcamento {
 		throw new DomainException("Orçamento não pode ser aprovado!");
 	}
 	
-	public void reprovado(Orcamento orcamento) {
+	public void reprovar(Orcamento orcamento) {
 		throw new DomainException("Orçamento não pode ser reprovado!");
 	}
 
-	public void finalizado(Orcamento orcamento) {
+	public void finalizar(Orcamento orcamento) {
 		throw new DomainException("Orçamento não pode ser finalizado!");
 	}
 

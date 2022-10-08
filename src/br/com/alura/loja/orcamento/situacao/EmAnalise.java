@@ -16,7 +16,7 @@ public class EmAnalise extends SituacaoOrcamento {
 	}
 	
 	@Override
-	public void reprovado(Orcamento orcamento) {
+	public void reprovar(Orcamento orcamento) {
 		orcamento.setSituacao( new Reprovado() );
 	}
 }

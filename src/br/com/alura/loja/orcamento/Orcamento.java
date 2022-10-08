@@ -27,11 +27,11 @@ public class Orcamento {
 	}
 	
 	public void reprovar() {
-		this.situacao.reprovado(this);
+		this.situacao.reprovar(this);
 	}
 	
 	public void finalizar() {
-		this.situacao.finalizado(this);
+		this.situacao.finalizar(this);
 	}
 	
 	public SituacaoOrcamento getSituacao() {
