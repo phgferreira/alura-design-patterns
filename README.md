@@ -16,3 +16,8 @@ Diferente da aplicação anterior (strategy) onde já sabemos qual regra será a
 No projeto ele é Template Method é aplicado como um complemento do Chain of Responsability a parte de código que é padrão em cada método calcular(Orcamento orcamento) é centralizado na classe mãe, em um método que não é abstrato. O método que não é abstrato chama os métodos os métodos abstratos que serão implementados pelas classes filhas.
 
 [Template Method](https://refactoring.guru/design-patterns/template-method)
+
+### Aula 04 - State
+Esse padrão é um pouco parecido com o strategy por ter comportamentos difernetes da mesma coisa porém depende do estado de um objeto. Basicamente é criado uma classe default com todo o comportamento padrão default dos estados e as classes que herdam a classe default renomeiam apenas os métodos necessários, cada classe filha representa um estado da classe mãe.
+
+[State](https://refactoring.guru/design-patterns/state)
