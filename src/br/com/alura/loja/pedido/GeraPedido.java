@@ -22,8 +22,9 @@ public class GeraPedido {
 		
 		Pedido pedido = new Pedido(cliente, LocalDateTime.now(), orcamento);
 		
-		System.out.println("Salvar pedido no Banco de Dados");
-		System.out.println("Enviar email com dados no novo pedido");
+		System.out.println("Pedido salvo com sucesso");
+		System.out.println("E-Mail enviado com sucesso");
+		System.out.println("Cliente: " + cliente + ", valor: " + valorOrcamento + ", quantidade: " + quantidadeItens);
 		
 	}
 }

@@ -1,11 +1,24 @@
 package br.com.alura.loja.pedido;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.math.BigDecimal;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class PedidoTest {
+	
+	private ByteArrayOutputStream out;
+	
+	@BeforeEach
+	void beforeEach() {
+		out = new ByteArrayOutputStream();
+		System.setOut( new PrintStream( out ));
+	}
 
 	@Test @DisplayName("Deve salvar o pedido no Banco de Dados")
 	void cenario1() {
@@ -14,7 +27,13 @@ class PedidoTest {
 		int quantidadeItens = 4;
 		
 		GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, quantidadeItens);
-
+		gerador.executa();
+		
+		assertEquals("""
+				Pedido salvo com sucesso
+				E-Mail enviado com sucesso
+				Cliente: Ana da Silva, valor: 600, quantidade: 4
+				""", out.toString());
 	}
 
 }
