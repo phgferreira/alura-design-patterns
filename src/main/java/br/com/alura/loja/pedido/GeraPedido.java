@@ -21,10 +21,11 @@ public class GeraPedido {
 		Orcamento orcamento = new Orcamento(valorOrcamento, quantidadeItens);
 		
 		Pedido pedido = new Pedido(cliente, LocalDateTime.now(), orcamento);
-		
-		System.out.println("Pedido salvo com sucesso");
-		System.out.println("E-Mail enviado com sucesso");
-		System.out.println("Cliente: " + cliente + ", valor: " + valorOrcamento + ", quantidade: " + quantidadeItens);
-		
+
+		System.out.printf("""
+				Pedido salvo com sucesso
+				E-Mail enviado com sucesso
+				Cliente: %s, valor: %f, quantidade: %d
+				""", cliente, valorOrcamento, quantidadeItens);
 	}
 }

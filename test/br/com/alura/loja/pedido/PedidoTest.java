@@ -32,7 +32,7 @@ class PedidoTest {
 		assertEquals("""
 				Pedido salvo com sucesso
 				E-Mail enviado com sucesso
-				Cliente: Ana da Silva, valor: 600, quantidade: 4
+				Cliente: Ana da Silva, valor: 600,000000, quantidade: 4
 				""", out.toString());
 	}
 
