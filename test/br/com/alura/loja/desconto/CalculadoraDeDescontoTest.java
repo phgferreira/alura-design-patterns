@@ -1,6 +1,6 @@
 package br.com.alura.loja.desconto;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.math.BigDecimal;
 

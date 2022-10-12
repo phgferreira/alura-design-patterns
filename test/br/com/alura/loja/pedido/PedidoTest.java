@@ -13,15 +13,15 @@ import org.junit.jupiter.api.Test;
 class PedidoTest {
 	
 	private ByteArrayOutputStream out;
-	
+
 	@BeforeEach
-	void beforeEach() {
+	public void beforeEach() {
 		out = new ByteArrayOutputStream();
 		System.setOut( new PrintStream( out ));
 	}
 
 	@Test @DisplayName("Deve salvar o pedido no Banco de Dados")
-	void cenario1() {
+	public void cenario1() {
 		String cliente = "Ana da Silva";
 		BigDecimal valorOrcamento = new BigDecimal("600");
 		int quantidadeItens = 4;
