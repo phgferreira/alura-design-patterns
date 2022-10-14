@@ -21,3 +21,16 @@ No projeto ele é Template Method é aplicado como um complemento do Chain of Re
 Esse padrão é um pouco parecido com o strategy por ter comportamentos difernetes da mesma coisa porém depende do estado de um objeto. Basicamente é criado uma classe default com todo o comportamento padrão default dos estados e as classes que herdam a classe default renomeiam apenas os métodos necessários, cada classe filha representa um estado da classe mãe.
 
 [State](https://refactoring.guru/design-patterns/state)
+
+### Aula 05 - Command
+Esse padrão tem como objetivo agrupar um conjunto de instruções que serão executadas da mesma forma em várias partes do código. Indo mais a fundo ainda, o padrão command utiliza de uma interface para abstrair várias classes que implementam um mesmo método, dessa forma, usando do poliformísmo, podemos ter um único objeto que pode ter vários métodos (todos com o mesmo nome) executandos tarefas diferentes.
+
+#### Command Handler
+É uma variação do padrão **Command** Onde existe também uma classe executora do método command. Essa classe é responsável por receber as dependências para a execução do método e o método que iria executar a ação, na verdade só repassa os valores que seriam da regra de negócio.
+Esse padrão tem um lado bem negativo que é o acumulo de responsabilidades no "*comando*" mas vale a pena conhecer porque cada caso é um caso.
+
+[Command](https://refactoring.guru/design-patterns/command)
+
+Também é recomendado a leitura de dois padrões de arquitura que complementando que são interessantes falando do **Command**, são eles:
+* Domain Driven Design;
+* Clean Arquitecture.
