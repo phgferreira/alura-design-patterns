@@ -27,7 +27,8 @@ class PedidoTest {
 		int quantidadeItens = 4;
 		
 		GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, quantidadeItens);
-		gerador.executa();
+		GeraPedidoHandler handler = new GeraPedidoHandler(/* Envia as dependências */);
+		handler.execute(gerador);
 		
 		assertEquals("""
 				Pedido salvo com sucesso
