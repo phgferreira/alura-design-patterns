@@ -34,3 +34,10 @@ Esse padrão tem um lado bem negativo que é o acumulo de responsabilidades no "
 Também é recomendado a leitura de dois padrões de arquitura que complementando que são interessantes falando do **Command**, são eles:
 * Domain Driven Design;
 * Clean Arquitecture.
+
+### Aula 06 - Observer
+O padrão de projeto **Observer** consiste em ter uma classe central que simplesmente notifica um conjuntos de classes (classes ouvintes) sobre uma determinada ação (evento). Quando são notificadas elas iniciam a ação e decidem o que fazer com isso.
+
+Esse padrão é muito comum com as bibliotecas que tratam eventos que são acionados como flexo de alguma ação do usuário.
+
+[Observer](https://refactoring.guru/design-patterns/observer)
