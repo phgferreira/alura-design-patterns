@@ -1,7 +1,13 @@
 # alura-design-patterns
 
-Esse repositório tem o objetivo de colocar em prática tudo que eu aprendi no curso da alura de [Design Patterns (parte 1)](https://www.alura.com.br/curso-online-introducao-design-patterns-java)
+Esse repositório tem o objetivo de colocar em prática tudo que eu aprendi nos cursos da alura:
 
+- [Design Patterns (parte 1)](https://www.alura.com.br/curso-online-introducao-design-patterns-java)
+- [Design Patterns (parte 2)](https://cursos.alura.com.br/course/avancando-design-patterns-java)
+
+---
+## Parte 1 - Padrões comportamentais
+>Status: <span style="color: green">Concluído</span>
 ### Aula 01 - Strategy
 O objetivo desse padrão de projeto é tratar diferentes estratégias (diferentes códigos) usando do polimorfismo e substituindo a centralização de responsabilidade com vários `ifs` em uma única classe.
 
@@ -41,3 +47,8 @@ O padrão de projeto **Observer** consiste em ter uma classe central que simples
 Esse padrão é muito comum com as bibliotecas que tratam eventos que são acionados como flexo de alguma ação do usuário.
 
 [Observer](https://refactoring.guru/design-patterns/observer)
+
+---
+## Parte 2 - Padrões Estruturais
+>Status: <span style="color: yellow">Em desenvolvimento</span>
+### Aula 01 - Adapters
